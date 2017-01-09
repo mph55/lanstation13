@@ -46,11 +46,24 @@ var/global/datum/controller/gameticker/ticker
 #define LOBBY_TICKING 1
 #define LOBBY_TICKING_RESTARTED 2
 /datum/controller/gameticker/proc/pregame()
-	var/oursong = file(pick(
-		"sound/music/gentemenandladies.ogg",
-		"sound/music/1.ogg",
-		))
+	var/path = "sound/lobbysongs/"
+	var/list/filenames = flist(path)
+
+	if(!filenames)
+		qdel(src)
+		return
+
+	for(var/filename in filenames)
+		if(copytext(filename, length(filename)) == "/")
+			filenames -= filename
+
+		if(findtext(lowertext(filename), "readme"))
+			filenames -= filename
+
+	var/oursong = file("[path][pick(filenames)]")
+
 	login_music = fcopy_rsc(oursong)
+
 	// Wait for MC to get its shit together
 	while(!master_controller.initialized)
 		sleep(1) // Don't thrash the poor CPU
@@ -58,7 +71,7 @@ var/global/datum/controller/gameticker/ticker
 	do
 		var/delay_timetotal = 3000 //actually 5 minutes or incase this is changed from 3000, (time_in_seconds * 10)
 		pregame_timeleft = world.timeofday + delay_timetotal
-		to_chat(world, "<B><FONT color='blue'>Welcome to the pre-game lobby!</FONT></B>")
+		to_chat(world, "<B><FONT color='blue'>Welcome to  the pre-game lobby!</FONT></B>")
 		to_chat(world, "Please, setup your character and select ready. Game will start in [(pregame_timeleft - world.timeofday) / 10] seconds.")
 		while(current_state <= GAME_STATE_PREGAME)
 			for(var/i=0, i<10, i++)
