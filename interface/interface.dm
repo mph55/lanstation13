@@ -43,8 +43,6 @@
 
 	src << browse(file(RULES_FILE), "window=rules;size=1280x720")
 
-	to_chat(world, "[prefs.viu_regras]")
-
 	if(!prefs.viu_regras)
 		var/database/query/q = new
 
