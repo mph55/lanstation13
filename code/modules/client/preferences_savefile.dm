@@ -862,6 +862,5 @@ AND players.player_slot = ? ;"}, ckey, slot)
 
 	return 1
 
-/datum/preferences/proc/change_specific_preference(var/preference, var/new_value)
 #undef SAVEFILE_VERSION_MAX
 #undef SAVEFILE_VERSION_MIN
