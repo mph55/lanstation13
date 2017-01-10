@@ -45,7 +45,7 @@
 /obj/item/weapon/gun/gatling/update_wield(mob/user)
 	item_state = "minigun[wielded ? 1 : 0]"
 	if(wielded)
-		slowdown = 0.30
+		slowdown = 10
 	else
 		slowdown = 0
 
@@ -107,7 +107,7 @@
 /obj/item/weapon/gun/gatling/beegun/update_wield(mob/user)
 	item_state = "beegun[wielded ? 1 : 0]"
 	if(wielded)
-		slowdown = 0.30
+		slowdown = 10
 	else
 		slowdown = 0
 

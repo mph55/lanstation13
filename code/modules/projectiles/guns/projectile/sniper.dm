@@ -15,7 +15,7 @@
 	ammo_type = "/obj/item/ammo_casing/BMG50"
 	max_shells = 1
 	load_method = 0
-	slowdown = 0.30
+	slowdown = 10
 	var/backup_view = 7
 
 /obj/item/weapon/gun/projectile/hecate/isHandgun()
