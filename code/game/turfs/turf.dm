@@ -379,8 +379,10 @@
 
 	lighting_overlay = old_lighting_overlay
 	affecting_lights = old_affecting_lights
+
 	if((old_opacity != opacity) || (dynamic_lighting != old_dynamic_lighting) || force_lighting_update)
 		reconsider_lights()
+
 	if(dynamic_lighting != old_dynamic_lighting)
 		if(dynamic_lighting)
 			lighting_build_overlays()
@@ -715,6 +717,10 @@
 
 	src.map_element = ME
 
-/turf/change_area(oldarea, newarea)
-	lighting_clear_overlays()
-	lighting_build_overlays()
+/turf/change_area(var/area/old_area, var/area/new_area)
+	if (new_area.lighting_use_dynamic != old_area.lighting_use_dynamic)
+		if (new_area.lighting_use_dynamic)
+			lighting_build_overlays()
+		else
+			lighting_clear_overlays()
+

@@ -179,6 +179,7 @@
 											\
 		if(!.)								\
 		{									\
+			effect_str[T] = 0;								\
 			continue;						\
 		}									\
 		. *= light_power;					\

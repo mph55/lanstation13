@@ -727,7 +727,6 @@
 		for(var/turf/simulated/T1 in turfs_to_update)
 			for(var/obj/machinery/door/D2 in T1)
 				D2.update_nearby_tiles()
-
 	return 1
 
 /proc/setup_shuttles()

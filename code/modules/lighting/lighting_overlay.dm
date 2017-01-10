@@ -28,6 +28,14 @@
 	// BYOND was too stupid to realise this is constant.
 	alpha = 255 - round(LIGHTING_SOFT_THRESHOLD * 255) // All overlays should start softly lit.
 
+	global.all_lighting_overlays += src
+
+	var/turf/T = loc
+	T.lighting_overlay = src
+	T.luminosity = 0
+
+	update_overlay()
+
 // This proc should be used to change the lumcounts of the overlay, it applies the changes and queus the overlay for updating, but only the latter if needed.
 /atom/movable/lighting_overlay/proc/update_lumcount(delta_r, delta_g, delta_b)
 	if(!delta_r && !delta_g && !delta_b) //Nothing is being changed all together.
@@ -128,6 +136,7 @@
 	var/turf/T = loc
 	if(istype(T))
 		T.lighting_overlay = null
+		T.luminosity = 1
 	..()
 
 // Variety of overrides so the overlays don't get affected by weird things.
