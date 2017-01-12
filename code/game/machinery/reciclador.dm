@@ -41,7 +41,7 @@
 		emagged = 0
 		update_icon()
 		playsound(src.loc, "sparks", 75, 1, -1)
-		to_chat("<span class='notice'>You reset the crusher to its default factory settings.</span>", user)
+		to_chat(user, "<span class='notice'>You reset the crusher to its default factory settings.</span>")
 	else
 		..()
 		return
