@@ -1,4 +1,4 @@
-var/const/SAFETY_COOLDOWN = 100
+#define SAFETY_COOLDOWN 100
 
 /obj/machinery/recycler
 	name = "crusher"
@@ -152,7 +152,7 @@ var/const/SAFETY_COOLDOWN = 100
 	else if(emagged == 1)
 		L.adjustBruteLoss(1000)
 
-
+#undef SAFETY_COOLDOWN
 
 /obj/item/weapon/paper/recycler
 	name = "paper - 'instruções'"
