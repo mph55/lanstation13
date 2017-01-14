@@ -11,11 +11,11 @@ var/list/event_last_fired = list()
 		message_admins("Too early to trigger random event, aborting.")
 		return
 
-	var/living = 0
+/*	var/living = 0 not using this for now so we're commenting it out
 	for(var/mob/living/M in player_list)
 		if(M.stat == CONSCIOUS)
 			living++
-
+*/
 	if(universe.name != "Normal")
 		message_admins("Universe isn't normal, aborting random event spawn.")
 		return
