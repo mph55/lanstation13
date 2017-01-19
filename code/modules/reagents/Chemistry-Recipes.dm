@@ -624,7 +624,6 @@
 	to_spawn = /obj/item/stack/sheet/mineral/plasma
 	..()
 
-
 /datum/chemical_reaction/solidification/iron
 	name = "Solid Metal"
 	id = "solidmetal"

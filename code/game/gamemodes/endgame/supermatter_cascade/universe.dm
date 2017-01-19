@@ -133,6 +133,7 @@
 
 /datum/universal_state/supermatter_cascade/OverlayAndAmbientSet()
 	set waitfor = FALSE
+	var count = 0
 	for(var/turf/T in turfs)
 		if(istype(T, /turf/space))
 			T.overlays += image(icon = T.icon, icon_state = "end01")
@@ -141,13 +142,14 @@
 				T.underlays += "end01"
 		CHECK_TICK
 
-	for(var/datum/lighting_corner/C in global.all_lighting_corners)
-		if (!C.active)
-			continue
+	for(var/atom/movable/lighting_overlay/L in all_lighting_overlays)
+		count++
+		if(!(count % 50000))
+			sleep(world.tick_lag)
 
-		if(C.z != map.zCentcomm)
-			C.update_lumcount(0.15, 0.5, 0)
-		CHECK_TICK
+		if(L.z != map.zCentcomm)
+			L.update_lumcount(0.15, 0.5, 0)
+		tcheck(80,1)
 
 /datum/universal_state/supermatter_cascade/proc/MiscSet()
 	for (var/obj/machinery/firealarm/alm in machines)

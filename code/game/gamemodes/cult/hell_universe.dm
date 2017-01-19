@@ -53,7 +53,7 @@ In short:
 	CHECK_TICK
 	suspend_alert = 1
 
-	convert_all_parallax()
+//	convert_all_parallax()
 	//separated into separate procs for profiling
 	AreaSet()
 	MiscSet()
@@ -100,6 +100,7 @@ In short:
 
 /datum/universal_state/hell/OverlayAndAmbientSet()
 	set waitfor = FALSE
+	var count = 0
 	for(var/turf/T in turfs)
 		if(istype(T, /turf/space))
 			T.overlays += image(icon = T.icon, icon_state = "hell01")
@@ -109,12 +110,13 @@ In short:
 			T.underlays += "hell01"
 		CHECK_TICK
 
-	for(var/datum/lighting_corner/C in global.all_lighting_corners)
-		if (!C.active)
-			continue
+	for(var/atom/movable/lighting_overlay/L in all_lighting_overlays)
+		count++
+		if(!(count % 200000))
+			sleep(world.tick_lag)
 
-		C.update_lumcount(0.5, 0, 0)
-		CHECK_TICK
+		L.update_lumcount(0.5, 0, 0)
+		tcheck(80,1)
 
 /datum/universal_state/hell/proc/MiscSet()
 	for (var/obj/machinery/firealarm/alm in machines)
@@ -138,6 +140,8 @@ In short:
 			M.Die()
 		CHECK_TICK
 
+/*
+>>>>>>> master
 /datum/universal_state/hell/proc/convert_all_parallax()
 	for(var/client/C in clients)
 		var/obj/screen/plane_master/parallax_spacemaster/PS = locate() in C.screen
@@ -150,4 +154,7 @@ In short:
 	0,0,0,0,
 	0,0,0,0,
 	0,0,0,0,
+<<<<<<< HEAD
 	1,0,0,1)
+=======
+	1,0,0,1)*/

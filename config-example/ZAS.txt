@@ -32,7 +32,7 @@
 
 # Airflow - Mob Stunning Threshold %
 #   Percent of 1 Atm. at which mobs will be stunned by airflow.
-/datum/ZAS_Setting/airflow_stun_pressure 60
+/datum/ZAS_Setting/airflow_stun_pressure 40
 
 # Aiflow Stunning - Cooldown
 #   How long, in tenths of a second, to wait before stunning them again.

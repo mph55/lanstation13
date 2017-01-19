@@ -1,13 +1,7 @@
 #define STAGE_SOURCES  1
-#define STAGE_CORNERS  2
-#define STAGE_OVERLAYS 3
+#define STAGE_OVERLAYS 2
 
 var/datum/subsystem/lighting/SSlighting
-
-var/list/lighting_update_lights    = list() // List of lighting sources  queued for update.
-var/list/lighting_update_corners   = list() // List of lighting corners  queued for update.
-var/list/lighting_update_overlays  = list() // List of lighting overlays queued for update.
-
 
 /datum/subsystem/lighting
 	name          = "Lighting"
@@ -20,7 +14,6 @@ var/list/lighting_update_overlays  = list() // List of lighting overlays queued 
 	var/initialized = FALSE
 
 	var/list/currentrun_lights
-	var/list/currentrun_corners
 	var/list/currentrun_overlays
 
 	var/resuming_stage = 0
@@ -31,11 +24,11 @@ var/list/lighting_update_overlays  = list() // List of lighting overlays queued 
 
 
 /datum/subsystem/lighting/stat_entry()
-	..("L:[lighting_update_lights.len]|C:[lighting_update_corners.len]|O:[lighting_update_overlays.len]")
+	..("L:[lighting_update_lights.len]|O:[lighting_update_overlays.len]")
 
 
 /datum/subsystem/lighting/Initialize(timeofday)
-	create_all_lighting_overlays()
+	create_lighting_overlays()
 	initialized = TRUE
 
 	..()
@@ -68,26 +61,8 @@ var/list/lighting_update_overlays  = list() // List of lighting overlays queued 
 			return
 
 	if (resuming_stage == STAGE_SOURCES || !resumed)
-		if (currentrun_corners && currentrun_corners.len)
-			to_chat(world, "we still have corners to do, but we're gonna override them?")
-
-		currentrun_corners  = lighting_update_corners
-		lighting_update_corners  = list()
-
-		resuming_stage = STAGE_CORNERS
-
-	while (currentrun_corners.len)
-		var/datum/lighting_corner/C = currentrun_corners[currentrun_corners.len]
-		currentrun_corners.len--
-
-		C.update_overlays()
-		C.needs_update = FALSE
-		if (MC_TICK_CHECK)
-			return
-
-	if (resuming_stage == STAGE_CORNERS || !resumed)
-		currentrun_overlays = lighting_update_overlays
-		lighting_update_overlays = list()
+		currentrun_overlays  = lighting_update_overlays
+		lighting_update_overlays  = list()
 
 		resuming_stage = STAGE_OVERLAYS
 
