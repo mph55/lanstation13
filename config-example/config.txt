@@ -2,12 +2,12 @@
 # SERVERNAME tgstation
 
 ## Alert levels
-ALERT_GREEN All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
-ALERT_BLUE_UPTO The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted.
-ALERT_BLUE_DOWNTO The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed.
-ALERT_RED_UPTO There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised.
-ALERT_RED_DOWNTO The self-destruct mechanism has been deactivated, there is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised.
-ALERT_DELTA The station's self-destruct mechanism has been engaged. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.
+ALERT_GREEN All Todos as ameças a estação se foram. Security não deve estar com armas visiveis, leis de privacidade voltam a pratica completa.
+ALERT_BLUE_UPTO A estação acabou de receber informações criveis sobre uma possivel atividade hostil dentro da estação. Security pode andar com armas visiveis e buscas aleatorias são permitidas.
+ALERT_BLUE_DOWNTO A ameaça imediata se foi. Security não deve mais estar com armas em punho, mas ainda podem ficar com as mesmas visiveis. Revistas aleatorias ainda são permitidas.
+ALERT_RED_UPTO Há uma ameaça imediata e séria contra a estação. Security tem permissão para estár com as armas em punho o tempo todo. Revistas aleatorias são permitidas e aconçelhadas.
+ALERT_RED_DOWNTO O mecansimo de auto-destruição foi ativado, entretanto ainda existe um sério risco iminente a estação. Security tem permissão para estár com as armas em punho o tempo todo, Revistas aleatorias são permitidas e aconçelhadas.
+ALERT_DELTA O mecansimo de auto-destruição foi ativado. Toda a tripulação deve obedeçer aos comandos dos heads of staff. qualquer violação dessas ordens podem ser punidas com a morte. Isso não é um treinamento.
 
 ## Add a # infront of this if you want to use the SQL based admin system, the legacy system uses admins.txt. You need to set up your database to use the SQL based system.
 #ADMIN_LEGACY_SYSTEM
