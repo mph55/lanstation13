@@ -5,7 +5,7 @@
 # Ranks can be anything defined in admin_ranks.txt           ~Carn   #
 ######################################################################
 
-morphi - Host
+oprario - Host
 gmaker2 - Game Admin
 anao22 - Game Admin
 austeree - Game Admin
