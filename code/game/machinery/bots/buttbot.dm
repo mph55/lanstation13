@@ -27,7 +27,7 @@ Here it is: Buttbot.
 	if (.)
 		return
 	if(sincelastfart + 5 < world.timeofday)
-		speak("butt")
+		speak("bunda")
 		playsound(get_turf(src), 'sound/misc/fart.ogg', 50, 1)
 		sincelastfart = world.timeofday
 
@@ -44,7 +44,7 @@ Here it is: Buttbot.
 
 /obj/machinery/bot/buttbot/Hear(var/datum/speech/speech, var/rendered_speech="")
 	set waitfor = 0 //Buttbots speaking should be queued after the original speech completes
-	if(prob(buttchance) && !findtext(speech.message,"butt"))
+	if(prob(buttchance) && !findtext(speech.message,"bunda"))
 		sleep(rand(1,3))
 		var/list/split_phrase = splittext(speech.message," ") // Split it up into words.
 
@@ -58,7 +58,7 @@ Here it is: Buttbot.
 			prepared_words -= word //Remove from unstuttered words so we don't stutter it again.
 			var/index = split_phrase.Find(word) //Find the word in the split phrase so we can replace it.
 
-			split_phrase[index] = "butt"
+			split_phrase[index] = "bunda"
 
 		say(jointext(split_phrase," "), speech.language) // No longer need to sanitize, speech is automatically html_encoded at render-time.
 
