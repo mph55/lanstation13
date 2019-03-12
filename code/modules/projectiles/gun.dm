@@ -31,7 +31,6 @@
 	var/ejectshell = 1
 
 	var/clumsy_check = 1				//Whether the gun disallows clumsy users from firing it.
-	var/honor_check = 1                 // Same, but highlanders and bombermen.
 	var/advanced_tool_user_check = 1	//Whether the gun disallows users that cannot use advanced tools from firing it.
 	var/MoMMI_check = 1					//Whether the gun disallows MoMMIs from firing it.
 	var/nymph_check = 1					//Whether the gun disallows diona nymphs from firing it.
@@ -57,7 +56,7 @@
 
 	var/pai_safety = TRUE	//To allow the pAI to activate or deactivate firing capability
 
-	// Tells is_honorable() which special_roles to respect.
+	
 
 
 /obj/item/weapon/gun/proc/ready_to_fire()
