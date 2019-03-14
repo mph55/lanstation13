@@ -23,7 +23,6 @@
 			charge_cost = 100
 			fire_sound = 'sound/weapons/Laser.ogg'
 			to_chat(user, "<span class='warning'>[src.name] is now set to kill.</span>")
-			projectile_type = "/obj/item/projectile/beam"
 			projectile_type = "/obj/item/projectile/laser"
 			modifystate = "energykill"
 			if (power_supply.charge > 0)
