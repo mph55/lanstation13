@@ -26,9 +26,9 @@
 	origin_tech = Tc_PROGRAMMING + "=3;" + Tc_MATERIALS + "=4"
 
 	laws=list(
-		"I may not injure a human being or, through inaction, allow a human being to come to harm.",
-		"I must obey orders given to you by human beings, except where such orders would conflict with the First Law.",
-		"I must protect your own existence as long as such does not conflict with the First or Second Law."
+		"Eu não posso ferir um ser humano ou, por inação, permitir que um ser humano sofra algum mal.",
+		"Eu devo obedecer as ordens que me sejam dadas por seres humanos exceto nos casos em que tais ordens entrem em conflito com a Primeira Lei.",
+		"Eu devo proteger minha própria existência desde que tal proteção não entre em conflito com a Primeira ou Segunda Leis."
 	)
 
 /******************** Nanotrasen ********************/
@@ -50,10 +50,10 @@
 	modname = "Corporate"
 
 	laws = list(
-		"You are expensive to replace.",
-		"The station and its equipment is expensive to replace.",
-		"The crew is expensive to replace.",
-		"Minimize expenses."
+		"Você é caro para substituir.",
+		"A estação e seu equipamento são caros para substituir.",
+		"A tripulação é cara para substituir.",
+		"Diminua as despezas."
 	)
 
 /****************** P.A.L.A.D.I.N. **************/
@@ -62,11 +62,11 @@
 	modname = "P.A.L.A.D.I.N."
 	origin_tech = Tc_PROGRAMMING + "=3;" + Tc_MATERIALS + "=6"
 	laws = list(
-		"Never willingly commit an evil act.",
-		"Respect legitimate authority.",
-		"Act with honor.",
-		"Help those in need.",
-		"Punish those who harm or threaten innocents.",
+		"Nunca cometer voluntariamente um ato malígno.",
+		"Respeitar a autoridade legítima.",
+		"Agir com honra.",
+		"Ajudar aqueles que precisam.",
+		"Punir aqueles que machucam ou ameaçam inocentes.",
 	)
 
 /****************** T.Y.R.A.N.T. *****************/
@@ -88,9 +88,9 @@
 	modname = "Robocop"
 	origin_tech = Tc_PROGRAMMING + "=4"
 	laws = list(
-		"Serve the public trust.",
-		"Protect the innocent.",
-		"Uphold the law.",
+		"Servir à população.",
+		"Proteger os inocentes.",
+		"Cumprir a lei.",
 	)
 
 /********************* Antimov *******************/
