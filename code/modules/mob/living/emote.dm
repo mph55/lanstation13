@@ -20,7 +20,7 @@
 /datum/emote/living/collapse
 	key = "collapse"
 	key_third_person = "collapses"
-	message = "collapses!"
+	message = "cai!"
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/glare
@@ -83,7 +83,7 @@
 /datum/emote/living/frown
 	key = "frown"
 	key_third_person = "frowns"
-	message = "frowns."
+	message = "franze a testa."
 
 /datum/emote/living/jump
 	key = "jump"
@@ -174,7 +174,7 @@
 /datum/emote/living/tremble
 	key = "tremble"
 	key_third_person = "trembles"
-	message = "trembles in fear!"
+	message = "treme de medo!"
 
 /datum/emote/living/custom
 	key = "custom"
