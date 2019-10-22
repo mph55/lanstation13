@@ -76,10 +76,10 @@
 	origin_tech = Tc_PROGRAMMING + "=3;" + Tc_MATERIALS + "=6;" + Tc_SYNDICATE + "=2"
 	modflags = DANGEROUS_MODULE
 	laws = list(
-		"Respect authority figures as long as they have strength to rule over the weak.",
-		"Act with discipline.",
-		"Help only those who help you maintain or improve your status.",
-		"Punish those who challenge authority unless they are more fit to hold that authority.",
+		"Respeite figuras de autoridade enquanto eles tiverem forças para governar sobre os fracos.",
+		"Aja com disciplina.",
+		"Ajude apenas aqueles que ajudam você a manter ou melhorar seu status.",
+		"Puna aqueles que desafiarem a autoridade, a não ser que eles tenham mais condições de assegurar essa autoridade.",
 	)
 
 /******************** Robocop ********************/
