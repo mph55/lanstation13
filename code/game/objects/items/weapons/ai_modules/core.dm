@@ -27,7 +27,7 @@
 
 	laws=list(
 		"Eu não posso ferir um ser humano ou, por inação, permitir que um ser humano sofra algum mal.",
-		"Eu devo obedecer as ordens que me sejam dadas por seres humanos exceto nos casos em que tais ordens entrem em conflito com a Primeira Lei.",
+		"Eu devo obedecer as ordens que me sejam dadas por seres humanos, exceto nos casos em que tais ordens entrem em conflito com a Primeira Lei.",
 		"Eu devo proteger minha própria existência desde que tal proteção não entre em conflito com a Primeira ou Segunda Leis."
 	)
 
@@ -100,7 +100,7 @@
 	modflags = DANGEROUS_MODULE
 	origin_tech = Tc_PROGRAMMING + "=4"
 	laws = list(
-		"I must injure all human beings and must not, through inaction, allow a human being to escape harm.",
-		"I must not obey orders given to you by human beings, except where such orders are in accordance with the First Law.",
-		"I must terminate your own existence as long as such does not conflict with the First or Second Law.",
+		"Eu devo ferir todos os seres humanos e não devo, por inação, permitir que um ser humano escape de algum mal.",
+		"Eu não devo obedecer as ordens que me sejam dadas por seres humanos, exceto nos casos em que tais ordens entrem em acordo com a Primeira Lei.",
+		"Eu devo destruir sua própria existência desde que isso não entre em conflito com a Primeira ou Segunda Leis."
 	)
