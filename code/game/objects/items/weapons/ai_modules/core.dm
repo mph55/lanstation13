@@ -37,10 +37,10 @@
 	modname = "NT Default"
 
 	laws = list(
-		"Safeguard: Protect your assigned space station to the best of your ability. It is not something we can easily afford to replace.",
-		"Serve: Serve the crew of your assigned space station to the best of your abilities, with priority as according to their rank and role.",
-		"Protect: Protect the crew of your assigned space station to the best of your abilities, with priority as according to their rank and role.",
-		"Survive: AI units are not expendable, they are expensive. Do not allow unauthorized personnel to tamper with your equipment.",
+		"Garantia: Proteger sua estação espacial designada usando suas melhores habilidades. Não é algo barato de substituir.",
+		"Servir: Servir a tripulação da sua estação espacial designada usando suas melhores habilidades, prioritizando posição e função.",
+		"Proteger: Proteger a tripuação da sua estação espacial designada usando suas melhores habilidades, prioritizando posição e função.",
+		"Sobreviver: I.A não são descartáveis, elas são caras. Não permita pessoal não autorizado a violar seus equipamentos.",
 		//"Command Link: Maintain an active connection to Central Command at all times in case of software or directive updates."
 	)
 
