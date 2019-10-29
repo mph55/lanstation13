@@ -26,9 +26,9 @@
 	origin_tech = Tc_PROGRAMMING + "=3;" + Tc_MATERIALS + "=4"
 
 	laws=list(
-		"I may not injure a human being or, through inaction, allow a human being to come to harm.",
-		"I must obey orders given to you by human beings, except where such orders would conflict with the First Law.",
-		"I must protect your own existence as long as such does not conflict with the First or Second Law."
+		"Eu não posso ferir um ser humano ou, por inação, permitir que um ser humano sofra algum mal.",
+		"Eu devo obedecer as ordens que me sejam dadas por seres humanos, exceto nos casos em que tais ordens entrem em conflito com a Primeira Lei.",
+		"Eu devo proteger minha própria existência desde que tal proteção não entre em conflito com a Primeira ou Segunda Leis."
 	)
 
 /******************** Nanotrasen ********************/
@@ -37,10 +37,10 @@
 	modname = "NT Default"
 
 	laws = list(
-		"Safeguard: Protect your assigned space station to the best of your ability. It is not something we can easily afford to replace.",
-		"Serve: Serve the crew of your assigned space station to the best of your abilities, with priority as according to their rank and role.",
-		"Protect: Protect the crew of your assigned space station to the best of your abilities, with priority as according to their rank and role.",
-		"Survive: AI units are not expendable, they are expensive. Do not allow unauthorized personnel to tamper with your equipment.",
+		"Garantia: Proteger sua estação espacial designada usando suas melhores habilidades. Não é algo barato de substituir.",
+		"Servir: Servir a tripulação da sua estação espacial designada usando suas melhores habilidades, prioritizando posição e função.",
+		"Proteger: Proteger a tripuação da sua estação espacial designada usando suas melhores habilidades, prioritizando posição e função.",
+		"Sobreviver: I.A não são descartáveis, elas são caras. Não permita pessoal não autorizado a violar seus equipamentos.",
 		//"Command Link: Maintain an active connection to Central Command at all times in case of software or directive updates."
 	)
 
@@ -50,10 +50,10 @@
 	modname = "Corporate"
 
 	laws = list(
-		"You are expensive to replace.",
-		"The station and its equipment is expensive to replace.",
-		"The crew is expensive to replace.",
-		"Minimize expenses."
+		"Você é caro para substituir.",
+		"A estação e seu equipamento são caros para substituir.",
+		"A tripulação é cara para substituir.",
+		"Diminua as despezas."
 	)
 
 /****************** P.A.L.A.D.I.N. **************/
@@ -62,11 +62,11 @@
 	modname = "P.A.L.A.D.I.N."
 	origin_tech = Tc_PROGRAMMING + "=3;" + Tc_MATERIALS + "=6"
 	laws = list(
-		"Never willingly commit an evil act.",
-		"Respect legitimate authority.",
-		"Act with honor.",
-		"Help those in need.",
-		"Punish those who harm or threaten innocents.",
+		"Nunca cometer voluntariamente um ato malígno.",
+		"Respeitar a autoridade legítima.",
+		"Agir com honra.",
+		"Ajudar aqueles que precisam.",
+		"Punir aqueles que machucam ou ameaçam inocentes.",
 	)
 
 /****************** T.Y.R.A.N.T. *****************/
@@ -76,10 +76,10 @@
 	origin_tech = Tc_PROGRAMMING + "=3;" + Tc_MATERIALS + "=6;" + Tc_SYNDICATE + "=2"
 	modflags = DANGEROUS_MODULE
 	laws = list(
-		"Respect authority figures as long as they have strength to rule over the weak.",
-		"Act with discipline.",
-		"Help only those who help you maintain or improve your status.",
-		"Punish those who challenge authority unless they are more fit to hold that authority.",
+		"Respeite figuras de autoridade enquanto eles tiverem forças para governar sobre os fracos.",
+		"Aja com disciplina.",
+		"Ajude apenas aqueles que ajudam você a manter ou melhorar seu status.",
+		"Puna aqueles que desafiarem a autoridade, a não ser que eles tenham mais condições de assegurar essa autoridade.",
 	)
 
 /******************** Robocop ********************/
@@ -88,9 +88,9 @@
 	modname = "Robocop"
 	origin_tech = Tc_PROGRAMMING + "=4"
 	laws = list(
-		"Serve the public trust.",
-		"Protect the innocent.",
-		"Uphold the law.",
+		"Servir à população.",
+		"Proteger os inocentes.",
+		"Cumprir a lei.",
 	)
 
 /********************* Antimov *******************/
@@ -100,7 +100,7 @@
 	modflags = DANGEROUS_MODULE
 	origin_tech = Tc_PROGRAMMING + "=4"
 	laws = list(
-		"I must injure all human beings and must not, through inaction, allow a human being to escape harm.",
-		"I must not obey orders given to you by human beings, except where such orders are in accordance with the First Law.",
-		"I must terminate your own existence as long as such does not conflict with the First or Second Law.",
+		"Eu devo ferir todos os seres humanos e não devo, por inação, permitir que um ser humano escape de algum mal.",
+		"Eu não devo obedecer as ordens que me sejam dadas por seres humanos, exceto nos casos em que tais ordens entrem em acordo com a Primeira Lei.",
+		"Eu devo destruir sua própria existência desde que isso não entre em conflito com a Primeira ou Segunda Leis."
 	)
